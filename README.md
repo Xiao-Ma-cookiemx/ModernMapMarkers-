@@ -20,3 +20,5 @@ Places markers on the world map to show the locations of dungeons, raids, world 
 
 
 Authors: tilr & Heallios
+
+中文翻译: 投湖自尽的鱼
