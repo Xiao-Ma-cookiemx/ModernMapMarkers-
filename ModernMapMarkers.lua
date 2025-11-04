@@ -17,26 +17,26 @@ local points = {
     {1, 20, 0.123, 0.128, "黑暗深渊", "dungeon", "24-32", 15},
     {1, 8, 0.66, 0.49, "黑色沼泽", "dungeon", "60", 16},
 	-- Kalimdor World Bosses
-	{1, 23, 0.535, 0.816, "Azuregos", "worldboss", "60", nil},
-	{1, 23, 0.69, 0.094, "Cla'ckora", "worldboss", "60", nil},
-	{1, 4, 0.82, 0.80, "Concavius", "worldboss", "60"},
-	{1, 19, 0.336, 0.398, "Father Lycan", "worldboss", "60", nil},
-	{1, 8, 0.361, 0.762, "Ostarius", "worldboss", "60", nil},
-	{1, 20, 0.937, 0.355, "Emerald Dragon - Spawn Point 1 of 4", "worldboss", "60", nil},
-	{1, 25, 0.512, 0.108, "Emerald Dragon - Spawn Point 2 of 4", "worldboss", "60", nil},
-    -- Kalimdor Transport
-    {1, 9, 0.512, 0.135, "Zeppelins to UC & Grom'Gol", "zepp", "Horde", nil},  -- horde
-    {1, 9, 0.415, 0.184, "Zeppelins to TB & Kargath", "zepp", "Horde", nil},   -- horde
-    {1, 29, 0.165, 0.230, "Zeppelin to Orgrimmar", "zepp", "Horde", nil},  -- horde
-    {1, 9, 0.598, 0.236, "Boat to Revantusk Village ", "boat", "Horde", nil},  -- horde
-    {1, 26, 0.636, 0.389, "Boat to Booty Bay", "boat", "Neutral", nil},  -- neutral
-	{1, 30, 0.324, 0.44, "Boat to Stormwind", "boat", "Alliance", nil}, -- alliance
-	{1, 30, 0.304, 0.41, "Boat to Alah'Thalas", "boat", "Alliance", nil},  -- alliance
-	{1, 30, 0.333, 0.399, "Boat to Rut'Theran Village", "boat", "Alliance", nil}, -- alliance
-	{1, 12, 0.718, 0.566, "Boat to Menethil Harbor", "boat", "Alliance", nil}, -- alliance
-	{1, 25, 0.311, 0.395, "Boat to Forgotten Coast", "boat", "Alliance", nil}, -- alliance
-	{1, 25, 0.431, 0.428, "Boat to Sardor Isle", "boat", "Alliance", nil}, -- alliance
-	{1, 18, 0.552, 0.949, "Boat to Auberdine", "boat", "Alliance", nil}, -- alliance
+	{1, 23, 0.535, 0.816, "艾索雷葛斯", "worldboss", "60", nil},
+	{1, 23, 0.69, 0.094, "克拉科拉", "worldboss", "60", nil},
+	{1, 4, 0.82, 0.80, "空卡维斯", "worldboss", "60"},
+	{1, 19, 0.336, 0.398, "狼人主教", "worldboss", "60", nil}, -- 无对照
+	{1, 8, 0.361, 0.762, "奥兹塔里亚斯", "worldboss", "60", nil},
+	{1, 20, 0.937, 0.355, "翡翠巨龙", "worldboss", "60", nil},
+	{1, 25, 0.512, 0.108, "翡翠巨龙", "worldboss", "60", nil},
+	-- Kalimdor 交通点
+	{1, 9, 0.512, 0.135, "飞艇前往幽暗城与格罗姆高", "zepp", "Horde", nil},  -- 部落
+	{1, 9, 0.415, 0.184, "飞艇前往雷霆崖与卡加斯", "zepp", "Horde", nil},   -- 部落
+	{1, 29, 0.165, 0.230, "飞艇前往奥格瑞玛", "zepp", "Horde", nil},  -- 部落
+	{1, 9, 0.598, 0.236, "船只前往恶齿村", "boat", "Horde", nil},  -- 部落
+	{1, 26, 0.636, 0.389, "船只前往藏宝海湾", "boat", "Neutral", nil},  -- 中立
+	{1, 30, 0.324, 0.44, "船只前往暴风城", "boat", "Alliance", nil}, -- 联盟
+	{1, 30, 0.304, 0.41, "船只前往阿拉萨拉斯", "boat", "Alliance", nil},  -- 联盟（自定义私服地区）
+	{1, 30, 0.333, 0.399, "船只前往鲁瑟兰村", "boat", "Alliance", nil}, -- 联盟
+	{1, 12, 0.718, 0.566, "船只前往米奈希尔港", "boat", "Alliance", nil}, -- 联盟
+	{1, 25, 0.311, 0.395, "船只前往遗忘海岸", "boat", "Alliance", nil}, -- 联盟（自定义）
+	{1, 25, 0.431, 0.428, "船只前往萨多尔岛", "boat", "Alliance", nil}, -- 联盟（自定义）
+	{1, 18, 0.552, 0.949, "船只前往奥伯丁", "boat", "Alliance", nil}, -- 联盟
 
     -- Eastern Kingdoms Dungeons
     {2, 21, 0.95, 0.53, "仇恨熔炉采石场", "dungeon", "52-60", 1},
@@ -49,12 +49,11 @@ local points = {
     {2, 36, 0.44, 0.67, "影牙城堡", "dungeon", "22-30", 7},
     {2, 1, 0.31, 0.14, "斯坦索姆", "dungeon", "58-60", 8},
     {2, 1, 0.47, 0.24, "斯坦索姆 - 后门", "dungeon", "58-60", 8},
-    {2, 16, 0.63, 0.58, "暴风城地牢", "dungeon", "24-31", 9},
+    {2, 16, 0.63, 0.58, "暴风城地牢", "dungeon", "60", 9},
     {2, 16, 0.29, 0.61, "暴风城地牢 - 部落入口", "dungeon", "60", 9},
     {2, 29, 0.423, 0.726, "死亡矿井", "dungeon", "17-24", 10},
     {2, 12, 0.701, 0.55, "沉没的神庙", "dungeon", "50-60", 11},
-    {2, 39, 0.336, 0.879, "熔火之心", "raid", "60", 12},
-    {2, 21, 0.273, 0.387, "熔火之心 (黑石山)", "raid", "60", 12},
+    {2, 21, 0.273, 0.387, "熔火之心", "raid", "60", 12},
     {2, 16, 0.51, 0.675, "监狱", "dungeon", "24-31", 13},
     {2, 23, 0.53, 0.172, "祖尔格拉布", "raid", "60", 14},
     {2, 1, 0.40, 0.28, "纳克萨玛斯", "raid", "60", 15},
@@ -66,31 +65,27 @@ local points = {
     {2, 28, 0.69, 0.74, "通灵学院", "dungeon", "58-60", 21},
     {2, 9, 0.57, 0.598, "风暴废墟", "dungeon", "35-41", 22},
     {2, 21, 0.312, 0.365, "黑石塔上层", "dungeon", "55-60", 23},
-    {2, 39, 0.355, 0.855, "黑石塔上层 (外部)", "dungeon", "55-60", 23},
     {2, 21, 0.321, 0.386, "黑石塔下层", "dungeon", "55-60", 24},
-    {2, 39, 0.364, 0.879, "黑石塔下层 (外部)", "dungeon", "55-60", 24},
     {2, 21, 0.328, 0.362, "黑石深渊", "dungeon", "52-60", 25},
-    {2, 39, 0.371, 0.857, "黑石深渊 (外部)", "dungeon", "52-60", 25},
     {2, 21, 0.273, 0.363, "黑翼之巢", "raid", "60", 26},
-    {2, 39, 0.332, 0.851, "黑翼之巢 (外部)", "raid", "60", 26},
     {2, 19, 0.67, 0.634, "龙喉居所", "dungeon", "27-33", 27},
 	-- Eastern Kingdoms World Bosses
-	{2, 34, 0.471, 0.751, "Dark Reaver of Karazhan", "worldboss", "60", nil},
-	{2, 15, 0.465, 0.357, "Emerald Dragon - Spawn Point 3 of 4", "worldboss", "60", nil},
-	{2, 33, 0.632, 0.217, "Emerald Dragon - Spawn Point 4 of 4", "worldboss", "60", nil},
-	{2, 30, 0.36, 0.753, "Lord Kazzak", "worldboss", "60", 7},
-	{2, 1, 0.082, 0.38, "Nerubian Overseer", "worldboss", "60", nil},
-	-- Eastern Kingdoms Transport
-	{2, 16, 0.694, 0.294, "Tram to Ironforge", "tram", "Alliance", nil},  -- alliance
-	{2, 35, 0.762, 0.511, "Tram to Stormwind", "tram", "Alliance", nil},  -- alliance
-	{2, 33, 0.812, 0.794, "Boat to Sparkwater Port", "boat", "Horde", nil}, -- horde
-	{2, 19, 0.068, 0.613, "Boat to Theramore Isle", "boat", "Alliance", nil},  -- alliance
-	{2, 16, 0.218, 0.563, "Boat to Auberdine", "boat", "Alliance", nil}, -- alliance
-	{2, 23, 0.257, 0.73, "Boat to Ratchet", "boat", "Neutral", nil}, -- neutral
-	{2, 14, 0.616, 0.571, "Zeppelins to Orgrimmar & Grom'Gol", "zepp", "Horde", nil}, -- horde
-	{2, 23, 0.312, 0.298, "Zeppelins to UC & Orgrimmar", "zepp", "Horde", nil}, -- Horde
-	{2, 24, 0.075, 0.480, "Zeppelin to Orgrimmar", "zepp", "Horde",  nil}, -- Horde
-	{2, 37, 0.531, 0.047, "Boat to Auberdine", "boat", "Alliance", nil}, -- alliance
+	{2, 34, 0.471, 0.751, "卡拉赞黑暗掠夺者", "worldboss", "60", nil},
+	{2, 15, 0.465, 0.357, "翡翠巨龙", "worldboss", "60", nil},
+	{2, 33, 0.632, 0.217, "翡翠巨龙", "worldboss", "60", nil},
+	{2, 30, 0.36, 0.753, "卡扎克", "worldboss", "60", nil},
+	{2, 1, 0.082, 0.38, "蛛怪监工", "worldboss", "60", nil},
+	-- Eastern Kingdoms 交通点
+	{2, 16, 0.694, 0.294, "地铁前往铁炉堡", "tram", "Alliance", nil},  -- 联盟
+	{2, 35, 0.762, 0.511, "地铁前往暴风城", "tram", "Alliance", nil},  -- 联盟
+	{2, 33, 0.812, 0.794, "船只前往火花港", "boat", "Horde", nil}, -- 部落（自定义地区）
+	{2, 19, 0.068, 0.613, "船只前往塞拉摩岛", "boat", "Alliance", nil},  -- 联盟
+	{2, 16, 0.218, 0.563, "船只前往奥伯丁", "boat", "Alliance", nil}, -- 联盟
+	{2, 23, 0.257, 0.73, "船只前往棘齿城", "boat", "Neutral", nil}, -- 中立
+	{2, 14, 0.616, 0.571, "飞艇前往奥格瑞玛与格罗姆高", "zepp", "Horde", nil}, -- 部落
+	{2, 23, 0.312, 0.298, "飞艇前往幽暗城与奥格瑞玛", "zepp", "Horde", nil}, -- 部落
+	{2, 24, 0.075, 0.480, "飞艇前往奥格瑞玛", "zepp", "Horde", nil}, -- 部落
+	{2, 37, 0.531, 0.047, "船只前往奥伯丁", "boat", "Alliance", nil}, -- 联盟
 }
 
 
@@ -570,6 +565,7 @@ end
 if debug then
     DEFAULT_CHAT_FRAME:AddMessage("Modern Map Markers: Initial Load Complete")
 end
+
 
 
 
