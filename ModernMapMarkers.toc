@@ -1,6 +1,6 @@
 ## Interface: 11200
 ## Title: |cff7fff7fM|cffffffffodern |cff7fff7fM|cffffffffap |cff7fff7fM|cffffffffarkers
-## Author: tilr & Heallios
+## Author: tilr & Heallios & 投湖自尽的鱼
 ## Notes: Shows dungeon, raid, world boss, boat, zeppelin, and tram locations on the world map
 ## Version: 1.2
 ## OptionalDeps: Atlas, AtlasQuest
