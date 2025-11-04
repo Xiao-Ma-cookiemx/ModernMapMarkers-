@@ -1,99 +1,98 @@
 -- Marker data: { continent, zoneID, x, y, name, type, info, Atlas ID }
 local points = {
-    -- Kalimdor Dungeons
-    {1, 1, 0.123, 0.128, "Blackfathom Deeps", "dungeon", "24-32", 2},
-    {1, 23, 0.66, 0.49, "Black Morass", "dungeon", "60", 1},
-    {1, 1, 0.51, 0.78, "Crescent Grove", "dungeon", "32-38", 3},
-    {1, 12, 0.648, 0.303, "Dire Maul - East", "dungeon", "55-58", 4},
-    {1, 12, 0.624, 0.249, "Dire Maul - North", "dungeon", "57-60", 5},
-    {1, 12, 0.604, 0.311, "Dire Maul - West", "dungeon", "57-60", 6},
-    {1, 7, 0.29, 0.629, "Maraudon", "dungeon", "46-55", 8},
-    {1, 20, 0.53, 0.486, "Ragefire Chasm", "dungeon", "13-18", 10},
-    {1, 26, 0.488, 0.919, "Razorfen Downs", "dungeon", "37-46", 11},
-    {1, 26, 0.407, 0.873, "Razorfen Kraul", "dungeon", "29-38", 12},
-    {1, 26, 0.462, 0.357, "Wailing Caverns", "dungeon", "17-24", 15},
-    {1, 23, 0.389, 0.184, "Zul'Farrak", "dungeon", "44-54", 16},
-	-- Kalimdor Raids
-	{1, 15, 0.207, 0.592, "Emerald Sanctum", "raid", "60", 7},
-	{1, 10, 0.53, 0.76, "Onyxia's Lair", "raid", "60", 9},
-	{1, 21, 0.296, 0.960, "Ruins of Ahn'Qiraj", "raid", "60", 13},
-	{1, 21, 0.282, 0.956, "Temple of Ahn'Qiraj", "raid", "60", 14},
+    {1, 26, 0.407, 0.873, "剃刀沼泽", "dungeon", "29-38", 1},
+    {1, 26, 0.488, 0.919, "剃刀高地", "dungeon", "37-46", 2},
+    {1, 25, 0.648, 0.303, "厄运之槌（东）", "dungeon", "55-58", 3},
+    {1, 25, 0.624, 0.249, "厄运之槌（北）", "dungeon", "57-60", 4},
+    {1, 25, 0.604, 0.311, "厄运之槌（西）", "dungeon", "57-60", 5},
+    {1, 26, 0.462, 0.357, "哀嚎洞穴", "dungeon", "17-24", 6},
+    {1, 12, 0.53, 0.76, "奥妮克希亚的巢穴", "raid", "60", 7},
+    {1, 13, 0.296, 0.960, "安其拉废墟", "raid", "60", 8},
+    {1, 13, 0.282, 0.956, "安其拉神庙", "raid", "60", 9},
+    {1, 9, 0.53, 0.486, "怒焰裂谷", "dungeon", "13-18", 10},
+    {1, 20, 0.51, 0.78, "新月林地", "dungeon", "32-38", 11},
+    {1, 4, 0.29, 0.629, "玛拉顿", "dungeon", "46-55", 12},
+    {1, 8, 0.389, 0.184, "祖尔法拉克", "dungeon", "44-54", 13},
+    {1, 19, 0.207, 0.592, "翡翠圣殿", "raid", "60", 14},
+    {1, 20, 0.123, 0.128, "黑暗深渊", "dungeon", "24-32", 15},
+    {1, 8, 0.66, 0.49, "黑色沼泽", "dungeon", "60", 16},
 	-- Kalimdor World Bosses
-	{1, 2, 0.535, 0.816, "Azuregos", "worldboss", "60", nil},
-	{1, 2, 0.69, 0.094, "Cla'ckora", "worldboss", "60", nil},
-	{1, 7, 0.82, 0.80, "Concavius", "worldboss", "60"},
-	{1, 15, 0.336, 0.398, "Father Lycan", "worldboss", "60", nil},
-	{1, 23, 0.361, 0.762, "Ostarius", "worldboss", "60", nil},
-	{1, 1, 0.937, 0.355, "Emerald Dragon - Spawn Point 1 of 4", "worldboss", "60", nil},
-	{1, 12, 0.512, 0.108, "Emerald Dragon - Spawn Point 2 of 4", "worldboss", "60", nil},
+	{1, 23, 0.535, 0.816, "Azuregos", "worldboss", "60", nil},
+	{1, 23, 0.69, 0.094, "Cla'ckora", "worldboss", "60", nil},
+	{1, 4, 0.82, 0.80, "Concavius", "worldboss", "60"},
+	{1, 19, 0.336, 0.398, "Father Lycan", "worldboss", "60", nil},
+	{1, 8, 0.361, 0.762, "Ostarius", "worldboss", "60", nil},
+	{1, 20, 0.937, 0.355, "Emerald Dragon - Spawn Point 1 of 4", "worldboss", "60", nil},
+	{1, 25, 0.512, 0.108, "Emerald Dragon - Spawn Point 2 of 4", "worldboss", "60", nil},
     -- Kalimdor Transport
     {1, 9, 0.512, 0.135, "Zeppelins to UC & Grom'Gol", "zepp", "Horde", nil},  -- horde
     {1, 9, 0.415, 0.184, "Zeppelins to TB & Kargath", "zepp", "Horde", nil},   -- horde
-    {1, 28, 0.165, 0.230, "Zeppelin to Orgrimmar", "zepp", "Horde", nil},  -- horde
+    {1, 29, 0.165, 0.230, "Zeppelin to Orgrimmar", "zepp", "Horde", nil},  -- horde
     {1, 9, 0.598, 0.236, "Boat to Revantusk Village ", "boat", "Horde", nil},  -- horde
     {1, 26, 0.636, 0.389, "Boat to Booty Bay", "boat", "Neutral", nil},  -- neutral
-	{1, 5, 0.324, 0.44, "Boat to Stormwind", "boat", "Alliance", nil}, -- alliance
-	{1, 5, 0.304, 0.41, "Boat to Alah'Thalas", "boat", "Alliance", nil},  -- alliance
-	{1, 5, 0.333, 0.399, "Boat to Rut'Theran Village", "boat", "Alliance", nil}, -- alliance
-	{1, 10, 0.718, 0.566, "Boat to Menethil Harbor", "boat", "Alliance", nil}, -- alliance
-	{1, 12, 0.311, 0.395, "Boat to Forgotten Coast", "boat", "Alliance", nil}, -- alliance
-	{1, 12, 0.431, 0.428, "Boat to Sardor Isle", "boat", "Alliance", nil}, -- alliance
-	{1, 25, 0.552, 0.949, "Boat to Auberdine", "boat", "Alliance", nil}, -- alliance
+	{1, 30, 0.324, 0.44, "Boat to Stormwind", "boat", "Alliance", nil}, -- alliance
+	{1, 30, 0.304, 0.41, "Boat to Alah'Thalas", "boat", "Alliance", nil},  -- alliance
+	{1, 30, 0.333, 0.399, "Boat to Rut'Theran Village", "boat", "Alliance", nil}, -- alliance
+	{1, 12, 0.718, 0.566, "Boat to Menethil Harbor", "boat", "Alliance", nil}, -- alliance
+	{1, 25, 0.311, 0.395, "Boat to Forgotten Coast", "boat", "Alliance", nil}, -- alliance
+	{1, 25, 0.431, 0.428, "Boat to Sardor Isle", "boat", "Alliance", nil}, -- alliance
+	{1, 18, 0.552, 0.949, "Boat to Auberdine", "boat", "Alliance", nil}, -- alliance
+
     -- Eastern Kingdoms Dungeons
-    {2, 26, 0.371, 0.857, "Blackrock Depths", "dungeon", "52-60", 1},
-	{2, 8, 0.328, 0.362, "Blackrock Depths", "dungeon", "52-60", 1},
-    {2, 38, 0.423, 0.726, "The Deadmines", "dungeon", "17-24", 3},
-    {2, 15, 0.30, 0.27, "Gilneas City", "dungeon", "43", 5},
-    {2, 10, 0.248, 0.337, "Gnomeregan", "dungeon", "29-38", 6},
-    {2, 8, 0.95, 0.53, "Hateforge Quarry", "dungeon", "52-60", 7},
-    {2, 9, 0.45, 0.75, "Karazhan Crypt", "dungeon", "58-60", 8},
-    {2, 8, 0.321, 0.386, "Lower Blackrock Spire", "dungeon", "55-60", 9},
-	{2, 26, 0.364, 0.879, "Lower Blackrock Spire", "dungeon", "55-60", 9},
-    {2, 34, 0.869, 0.323, "Scarlet Monastery - Armory", "dungeon", "32-42", 13}, 
-    {2, 34, 0.862, 0.295, "Scarlet Monastery - Cathedral", "dungeon", "35-45", 14}, 
-    {2, 34, 0.839, 0.283, "Scarlet Monastery - Graveyard", "dungeon", "26-36", 15},
-    {2, 34, 0.850, 0.338, "Scarlet Monastery - Library", "dungeon", "29-39", 16},
-    {2, 37, 0.69, 0.74, "Scholomance", "dungeon", "58-60", 17},
-    {2, 27, 0.44, 0.67, "Shadowfang Keep", "dungeon", "22-30", 18},
-    {2, 28, 0.51, 0.675, "The Stockade", "dungeon", "24-31", 19},
-    {2, 28, 0.63, 0.58, "Stormwind Vault", "dungeon", "60", 20},
-    {2, 13, 0.29, 0.61, "Stormwind Vault - Horde Entrance", "dungeon", "60", 20},
-    {2, 12, 0.31, 0.14, "Stratholme", "dungeon", "58-60", 22},
-    {2, 12, 0.47, 0.24, "Stratholme - Back Gate", "dungeon", "58-60", 22},
-    {2, 30, 0.701, 0.55, "The Sunken Temple", "dungeon", "50-60", 23},
-    {2, 4, 0.429, 0.130, "Uldaman - Main Entrance", "dungeon", "41-51", 25},
-    {2, 4, 0.657, 0.438, "Uldaman - Back Entrance", "dungeon", "41-51", 25},
-    {2, 8, 0.312, 0.365, "Upper Blackrock Spire", "dungeon", "55-60", 26},
-	{2, 26, 0.355, 0.855, "Upper Blackrock Spire", "dungeon", "55-60", 26},
-	{2, 39, 0.67, 0.634, "Dragonmaw Retreat", "dungeon", "27-33", 4},
-	{2, 5, 0.57, 0.598, "Stormwrought Ruins", "dungeon", "35-41", 21},
-	-- Eastern Kingdoms Raids
-	{2, 26, 0.332, 0.851, "Blackwing Lair", "raid", "60", 2},
-	{2, 8, 0.273, 0.363, "Blackwing Lair", "raid", "60", 2},
-	{2, 9, 0.46, 0.70, "Lower Karazhan Halls", "raid", "58-60", 10},
-	{2, 26, 0.336, 0.879, "Molten Core", "raid", "60", 11},
-	{2, 8, 0.273, 0.387, "Molten Core", "raid", "60", 11},
-	{2, 12, 0.40, 0.28, "Naxxramas", "raid", "60", 12},
-	{2, 9, 0.442, 0.719, "Tower of Karazhan", "raid", "60", 24},
-	{2, 29, 0.53, 0.172, "Zul'Gurub", "raid", "60", 27},
+    {2, 21, 0.95, 0.53, "仇恨熔炉采石场", "dungeon", "52-60", 1},
+    {2, 34, 0.45, 0.75, "卡拉赞下层大厅", "dungeon", "58-60", 2},
+    {2, 34, 0.442, 0.719, "卡拉赞之塔", "raid", "60", 3},
+    {2, 34, 0.46, 0.70, "卡拉赞墓穴", "raid", "60", 4},
+    {2, 6, 0.30, 0.27, "吉尔尼斯城", "dungeon", "43", 5},
+    {2, 24, 0.429, 0.130, "奥达曼", "dungeon", "41-51", 6},
+    {2, 24, 0.657, 0.438, "奥达曼 - 后门", "dungeon", "41-51", 6},
+    {2, 36, 0.44, 0.67, "影牙城堡", "dungeon", "22-30", 7},
+    {2, 1, 0.31, 0.14, "斯坦索姆", "dungeon", "58-60", 8},
+    {2, 1, 0.47, 0.24, "斯坦索姆 - 后门", "dungeon", "58-60", 8},
+    {2, 16, 0.63, 0.58, "暴风城地牢", "dungeon", "24-31", 9},
+    {2, 16, 0.29, 0.61, "暴风城地牢 - 部落入口", "dungeon", "60", 9},
+    {2, 29, 0.423, 0.726, "死亡矿井", "dungeon", "17-24", 10},
+    {2, 12, 0.701, 0.55, "沉没的神庙", "dungeon", "50-60", 11},
+    {2, 21, 0.336, 0.879, "熔火之心", "raid", "60", 12},
+    {2, 39, 0.273, 0.387, "熔火之心 (黑石山)", "raid", "60", 12},
+    {2, 16, 0.51, 0.675, "监狱", "dungeon", "24-31", 13},
+    {2, 23, 0.53, 0.172, "祖尔格拉布", "raid", "60", 14},
+    {2, 1, 0.40, 0.28, "纳克萨玛斯", "raid", "60", 15},
+    {2, 14, 0.869, 0.323, "血色修道院:军械库", "dungeon", "32-42", 16},
+    {2, 14, 0.850, 0.338, "血色修道院:图书馆", "dungeon", "29-39", 17},
+    {2, 14, 0.839, 0.283, "血色修道院:墓地", "dungeon", "26-36", 18},
+    {2, 14, 0.862, 0.295, "血色修道院:大教堂", "dungeon", "35-45", 19},
+    {2, 2, 0.248, 0.337, "诺莫瑞根", "dungeon", "29-38", 20},
+    {2, 28, 0.69, 0.74, "通灵学院", "dungeon", "58-60", 21},
+    {2, 9, 0.57, 0.598, "风暴废墟", "dungeon", "35-41", 22},
+    {2, 39, 0.312, 0.365, "黑石塔上层", "dungeon", "55-60", 23},
+    {2, 21, 0.355, 0.855, "黑石塔上层 (外部)", "dungeon", "55-60", 23},
+    {2, 39, 0.321, 0.386, "黑石塔下层", "dungeon", "55-60", 24},
+    {2, 21, 0.364, 0.879, "黑石塔下层 (外部)", "dungeon", "55-60", 24},
+    {2, 39, 0.328, 0.362, "黑石深渊", "dungeon", "52-60", 25},
+    {2, 21, 0.371, 0.857, "黑石深渊 (外部)", "dungeon", "52-60", 25},
+    {2, 39, 0.273, 0.363, "黑翼之巢", "raid", "60", 26},
+    {2, 21, 0.332, 0.851, "黑翼之巢 (外部)", "raid", "60", 26},
+    {2, 19, 0.67, 0.634, "龙喉居所", "dungeon", "27-33", 27},
 	-- Eastern Kingdoms World Bosses
-	{2, 9, 0.471, 0.751, "Dark Reaver of Karazhan", "worldboss", "60", nil},
-	{2, 11, 0.465, 0.357, "Emerald Dragon - Spawn Point 3 of 4", "worldboss", "60", nil},
+	{2, 34, 0.471, 0.751, "Dark Reaver of Karazhan", "worldboss", "60", nil},
+	{2, 15, 0.465, 0.357, "Emerald Dragon - Spawn Point 3 of 4", "worldboss", "60", nil},
 	{2, 33, 0.632, 0.217, "Emerald Dragon - Spawn Point 4 of 4", "worldboss", "60", nil},
-	{2, 7, 0.36, 0.753, "Lord Kazzak", "worldboss", "60", 7},
-	{2, 12, 0.082, 0.38, "Nerubian Overseer", "worldboss", "60", nil},
+	{2, 30, 0.36, 0.753, "Lord Kazzak", "worldboss", "60", 7},
+	{2, 1, 0.082, 0.38, "Nerubian Overseer", "worldboss", "60", nil},
 	-- Eastern Kingdoms Transport
-	{2, 28, 0.694, 0.294, "Tram to Ironforge", "tram", "Alliance", nil},  -- alliance
-	{2, 19, 0.762, 0.511, "Tram to Stormwind", "tram", "Alliance", nil},  -- alliance
+	{2, 16, 0.694, 0.294, "Tram to Ironforge", "tram", "Alliance", nil},  -- alliance
+	{2, 35, 0.762, 0.511, "Tram to Stormwind", "tram", "Alliance", nil},  -- alliance
 	{2, 33, 0.812, 0.794, "Boat to Sparkwater Port", "boat", "Horde", nil}, -- horde
-	{2, 39, 0.068, 0.613, "Boat to Theramore Isle", "boat", "Alliance", nil},  -- alliance
-	{2, 28, 0.218, 0.563, "Boat to Auberdine", "boat", "Alliance", nil}, -- alliance
-	{2, 29, 0.257, 0.73, "Boat to Ratchet", "boat", "Neutral", nil}, -- neutral
-	{2, 34, 0.616, 0.571, "Zeppelins to Orgrimmar & Grom'Gol", "zepp", "Horde", nil}, -- horde
-	{2, 29, 0.312, 0.298, "Zeppelins to UC & Orgrimmar", "zepp", "Horde", nil}, -- Horde
-	{2, 4, 0.075, 0.480, "Zeppelin to Orgrimmar", "zepp", "Horde",  nil}, -- Horde
-	{2, 1, 0.531, 0.047, "Boat to Auberdine", "boat", "Alliance", nil}, -- alliance
+	{2, 19, 0.068, 0.613, "Boat to Theramore Isle", "boat", "Alliance", nil},  -- alliance
+	{2, 16, 0.218, 0.563, "Boat to Auberdine", "boat", "Alliance", nil}, -- alliance
+	{2, 23, 0.257, 0.73, "Boat to Ratchet", "boat", "Neutral", nil}, -- neutral
+	{2, 14, 0.616, 0.571, "Zeppelins to Orgrimmar & Grom'Gol", "zepp", "Horde", nil}, -- horde
+	{2, 23, 0.312, 0.298, "Zeppelins to UC & Orgrimmar", "zepp", "Horde", nil}, -- Horde
+	{2, 24, 0.075, 0.480, "Zeppelin to Orgrimmar", "zepp", "Horde",  nil}, -- Horde
+	{2, 37, 0.531, 0.047, "Boat to Auberdine", "boat", "Alliance", nil}, -- alliance
 }
+
 
 -- keeping zoneIDs for reference and debugging only
 kZoneNames = {GetMapZones(1)}
@@ -571,4 +570,5 @@ end
 if debug then
     DEFAULT_CHAT_FRAME:AddMessage("Modern Map Markers: Initial Load Complete")
 end
+
 
